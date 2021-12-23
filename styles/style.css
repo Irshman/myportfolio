@@ -50,24 +50,12 @@ a {
 }
 
 .conteiner {
-  max-width: 85%;
+  max-width: 95%;
   margin: 0 auto;
 }
 
-.btn {
-  color: cornsilk;
-  cursor: pointer;
-}
-
 .project {
-  margin: 50px 0;
-}
-.project__head {
-  margin-bottom: 50px;
-}
-.project__title {
-  text-align: center;
-  font-size: 46px;
+  margin: 20px 0;
 }
 .project__body {
   margin: 0;
@@ -76,14 +64,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 -15px;
+  margin: 0 auto;
 }
 .project__item {
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
-  max-width: 33.3333333333%;
-  margin-bottom: 30px;
+  padding: 0 5px;
+  width: 25%;
+  margin-bottom: 10px;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -105,8 +93,7 @@ a {
   display: flex;
   flex: 1 1 auto;
   overflow: hidden;
-  border: 1px solid rgba(177, 177, 177, 0.527);
-  border-radius: 5px;
+  border: 1px solid rgba(211, 210, 210, 0.527);
   transition: all linear 0.3s;
 }
 .project__link {
@@ -116,7 +103,7 @@ a {
 }
 .project__name {
   color: #fff;
-  font-size: 32px;
+  font-size: 30px;
   position: absolute;
   top: -50px;
   transition: all linear 0.3s;
@@ -128,14 +115,15 @@ a {
   color: #fff;
 }
 .project__btn {
-  color: #171819;
+  color: #000;
+  cursor: pointer;
   display: block;
   text-align: center;
   font-size: 22px;
   border-radius: 5px;
   background-color: #fff;
-  height: 30px;
-  width: 50%;
+  height: 40px;
+  width: 140px;
   margin-bottom: 15px;
   transition: all linear 0.3s;
   position: absolute;
@@ -143,7 +131,8 @@ a {
   transition: all linear 0.3s;
 }
 .project__btn:hover {
-  background-color: #261748;
+  background-color: #433662;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
