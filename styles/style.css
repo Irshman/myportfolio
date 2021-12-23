@@ -119,13 +119,12 @@ a {
   cursor: pointer;
   display: block;
   text-align: center;
-  font-size: 22px;
+  margin: auto auto;
+  padding: 10px 0;
+  font-size: 18px;
   border-radius: 5px;
   background-color: #fff;
-  height: 40px;
   width: 140px;
-  margin-bottom: 15px;
-  transition: all linear 0.3s;
   position: absolute;
   top: -50px;
   transition: all linear 0.3s;
