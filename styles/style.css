@@ -29,7 +29,7 @@
 body {
   margin: 0;
   font-family: "Raleway", "Arial", "Helvetica", sans-serif;
-  color: #48555B;
+  color: #ffffff;
   width: 100vw;
 }
 
@@ -45,93 +45,120 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
   text-decoration: none;
-  color: #48555B;
+  color: #ffffff;
+  display: block;
   cursor: pointer;
 }
 
+.wrapper {
+  display: flex;
+}
+
 .conteiner {
-  max-width: 95%;
+  max-width: 92%;
   margin: 0 auto;
 }
 
-.project {
-  margin: 20px 0;
+.sidebar {
+  width: 330px;
+  height: 100vh;
+  background-color: #0e1326;
+  padding-top: 50px;
 }
-.project__body {
-  margin: 0;
+.sidebar__img {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #fff;
 }
-.project__cards {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+.sidebar__img img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+.sidebar__menu-block {
+  width: 140px;
+  margin: 70px auto;
+}
+.sidebar__menu {
+  font-size: 28px;
+  text-align: left;
   margin: 0 auto;
 }
-.project__item {
-  display: flex;
-  flex-direction: column;
-  padding: 0 5px;
-  width: 25%;
-  margin-bottom: 10px;
-  align-items: center;
+.sidebar__item {
+  margin: 40px 0;
+}
+.sidebar__link {
   position: relative;
-  overflow: hidden;
-  transition: all linear 0.3s;
+  display: block;
 }
-.project__item:hover .project__img {
-  filter: brightness(50%);
+.sidebar__link:hover {
+  color: #ff4ba8;
+  transition: all linear 0.4s;
 }
-.project__item:hover .project__name {
-  top: 40%;
+.sidebar__link--active {
+  color: #ff4ba8;
 }
-.project__item:hover .project__subtitle {
-  top: 50%;
+.sidebar__link--active::before {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 10px;
+  background-color: #ff4ba8;
+  top: 0;
+  left: -70%;
 }
-.project__item:hover .project__btn {
-  top: 60%;
+
+.works {
+  width: 100%;
+  height: 100vh;
+  background-color: #0a0f1e;
 }
-.project__img {
+.works__title {
+  font-size: 38px;
+  margin-top: 50px;
+  letter-spacing: 0.3rem;
+  position: relative;
+  width: 120px;
+}
+.works__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ff4ba8;
+}
+.works__cards {
+  margin: 40px 0 -25px;
   display: flex;
-  flex: 1 1 auto;
-  overflow: hidden;
-  border: 1px solid rgba(211, 210, 210, 0.527);
-  transition: all linear 0.3s;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.project__link {
+.works__item {
+  margin: 25px 0;
+}
+.works__img {
+  width: 400px;
+  height: 265px;
+  overflow: hidden;
+}
+.works__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.project__name {
-  color: #fff;
-  font-size: 30px;
-  position: absolute;
-  top: -50px;
-  transition: all linear 0.3s;
+.works__name {
+  margin-top: 25px;
+  letter-spacing: 0.1rem;
 }
-.project__subtitle {
-  position: absolute;
-  top: -50px;
-  transition: all linear 0.3s;
-  color: #fff;
-}
-.project__btn {
-  color: #000;
-  cursor: pointer;
-  display: block;
-  text-align: center;
-  margin: auto auto;
-  padding: 10px 0;
-  font-size: 18px;
-  border-radius: 5px;
-  background-color: #fff;
-  width: 140px;
-  position: absolute;
-  top: -50px;
-  transition: all linear 0.3s;
-}
-.project__btn:hover {
-  background-color: #433662;
-  color: #fff;
+.works__name a:hover {
+  color: #ff4ba8;
+  transition: all linear 0.4s;
 }
 
 /*# sourceMappingURL=style.css.map */

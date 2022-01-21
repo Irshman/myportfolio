@@ -26,10 +26,15 @@ h1, h2, h3, h4, h5, h6, p {
 a {
     text-decoration: none;
     color: $text-color;
+    display: block;
     cursor: pointer;
 }
 
+.wrapper {
+    display: flex;
+}
+
 .conteiner {
-    max-width: 95%;
+    max-width: 92%;
     margin: 0 auto;
 }
