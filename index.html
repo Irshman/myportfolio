@@ -10,29 +10,60 @@
 </head>
 <body>
     <div class="wrapper">
+
+        <!-- Sidebar -->
+
         <div class="sidebar">
             <div class="sidebar__img">
                 <img src="./img/user.jpg" alt="user">
             </div>
             <div class="sidebar__menu-block">
                 <ul class="sidebar__menu">
-                    <li class="sidebar__item"><a class="sidebar__link sidebar__link--active" href="#">About</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="#">Work</a></li>
-                    <li class="sidebar__item"><a class="sidebar__link" href="#">Contact</a></li>
+                    <li class="sidebar__item"><a id="about" class="sidebar__link sidebar__link--active" href="#">About</a></li>
+                    <li class="sidebar__item"><a id="work" class="sidebar__link" href="#">Work</a></li>
+                    <li class="sidebar__item"><a id="skills" class="sidebar__link" href="#">Skills</a></li>
                 </ul>
             </div>
         </div>
 
+        <!-- block about -->
+
+        <div class="about">
+            <div class="conteiner">
+                <h1 class="title">About</h1>
+                <div class="about__wrapper">
+                    <div class="about__info">
+                        <h1 class="about__name">Skvortsov Yevhenii</h1>
+                        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid alias a minus praesentium at mollitia maiores dolore quos corrupti, voluptatum possimus cupiditate similique aliquam consectetur beatae explicabo. Minima, voluptatem.</p>
+                        <div class="about__social">
+                            <a href="https://instagram.com/zhenya_skvortsov?utm_medium=copy_link" class="about__link" target="_blank"><img src="./img/social/instagram.png" alt="instagram"></a>
+                            <a href="https://t.me/Irshman" target="_blank" class="about__link"><img src="./img/social/telegram.png" alt="telegram"></a>
+                            <a href="mailto:zhenyaskvortsov9@gmail.com" target="_blank" class="about__link"><img src="./img/social/gmail.png" alt="gmail"></a>
+                            <a href="https://www.linkedin.com/in/evhenii-skvortsov-8695351a9" target="_blank" class="about__link"><img src="./img/social/linkedin.png" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    <img src="./img/avatar.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Block works  -->
+
         <div class="works">
             <div class="conteiner">
-                <h1 class="works__title">Work</h1>
+                <h1 class="title">Work</h1>
                 <div class="works__cards">
+
+                    <!-- Travelend  -->
+
                     <div class="works__item">
-                        <a href="https://irshman.github.io/trevland/" target="_blank" class="works__img">
-                            <img src="./img/projects/travelend.png" alt="" class="works__link">
-                        </a>
+                            <a href="https://irshman.github.io/trevland/" target="_blank" class="works__img">
+                                <img src="./img/projects/travelend.png" alt="" class="works__link">
+                            </a>
                         <h3 class="works__name"><a href="https://irshman.github.io/trevland/" target="_blank">Travelend</a></h3>
                     </div>
+
+                    <!-- Freshfruits -->
 
                     <div class="works__item">
                         <a href="https://irshman.github.io/freshfruits/" target="_blank" class="works__img">
@@ -41,12 +72,16 @@
                         <h3 class="works__name"><a href="https://irshman.github.io/freshfruits/" target="_blank">Freshfruits</a></h3>
                     </div>
 
+                    <!-- Konstructor -->
+
                     <div class="works__item">
                         <a href="https://irshman.github.io/konstruct/" target="_blank" class="works__img">
                             <img src="./img/projects/konstructor.png" alt="" class="works__link">
                         </a>
                         <h3 class="works__name"><a href="https://irshman.github.io/konstruct/" target="_blank">Konstructor</a></h3>
                     </div>
+
+                    <!-- Freebie Agency -->
 
                     <div class="works__item">
                         <a href="https://irshman.github.io/freebie/" target="_blank" class="works__img">
@@ -55,6 +90,8 @@
                         <h3 class="works__name"><a href="https://irshman.github.io/freebie/" target="_blank">Freebie Agency</a></h3>
                     </div>
 
+                    <!-- Soft Point -->
+
                     <div class="works__item">
                         <a href="https://irshman.github.io/softpoint/" target="_blank" class="works__img">
                             <img src="./img/projects/softpoint.png" alt="" class="works__link">
@@ -62,11 +99,19 @@
                         <h3 class="works__name"><a href="https://irshman.github.io/softpoint/" target="_blank">Soft Point</a></h3>
                     </div>
 
+                    <!-- .....  -->
 
-                    
                 </div>
             </div>
+        </div> 
+
+        <div class="skills">
+            <div class="conteiner">
+                <!-- <h1 class="title">Skills</h1> -->
+                <h2>Sorry, but there is nothing here yet :(</h2>
+            </div>
         </div>
+
     </div>
 
     <script src="./scripts/script.js"></script>

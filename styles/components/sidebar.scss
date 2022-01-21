@@ -3,6 +3,8 @@
     height: 100vh;
     background-color: $sidebar-bg;
     padding-top: 50px;
+    position: sticky;
+    z-index: 99;
 
     &__img {
         background-color: white;
@@ -38,6 +40,7 @@
     &__link {
         position: relative;
         display: block;
+
         &:hover {
             color: $primary-color;
             transition: $trs;
@@ -49,11 +52,11 @@
             &::before {
                 content: "";
                 position: absolute;
-                height: 110%;
-                width: 10px;
+                height: 2px;
+                width: 60%;
                 background-color: $primary-color;
-                top: 0;
-                left: -70%;
+                bottom: -10px;
+                left: 0;
             }
         }
     }
