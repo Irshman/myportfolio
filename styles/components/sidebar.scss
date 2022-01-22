@@ -6,6 +6,10 @@
     position: sticky;
     z-index: 99;
 
+    @media (max-width: $breakpoints768) {
+        display: none;
+    }
+
     &__img {
         background-color: white;
         width: 150px;
@@ -17,8 +21,13 @@
 
         img {
             object-fit: cover;
-            width: 150px;
-            height: 150px;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: $breakpoints768) {
+            width: 120px;
+            height: 120px;
         }
     }
 
@@ -31,6 +40,10 @@
         font-size: 28px;
         text-align: left;
         margin: 0 auto;
+
+        @media (max-width: $breakpoints768) {
+            font-size: 24px;
+        }
     }
 
     &__item {
@@ -40,6 +53,7 @@
     &__link {
         position: relative;
         display: block;
+        letter-spacing: .2rem;
 
         &:hover {
             color: $primary-color;

@@ -14,13 +14,18 @@
         <!-- Sidebar -->
 
         <div class="sidebar">
+
+            <!-- <div class="burger">
+                <span></span>
+            </div> -->
+
             <div class="sidebar__img">
                 <img src="./img/user.jpg" alt="user">
             </div>
             <div class="sidebar__menu-block">
                 <ul class="sidebar__menu">
-                    <li class="sidebar__item"><a id="about" class="sidebar__link sidebar__link--active" href="#">About</a></li>
-                    <li class="sidebar__item"><a id="work" class="sidebar__link" href="#">Work</a></li>
+                    <li class="sidebar__item"><a id="about" class="sidebar__link" href="#">About</a></li>
+                    <li class="sidebar__item"><a id="work" class="sidebar__link sidebar__link--active" href="#">Work</a></li>
                     <li class="sidebar__item"><a id="skills" class="sidebar__link" href="#">Skills</a></li>
                 </ul>
             </div>
@@ -42,7 +47,9 @@
                             <a href="https://www.linkedin.com/in/evhenii-skvortsov-8695351a9" target="_blank" class="about__link"><img src="./img/social/linkedin.png" alt="linkedin"></a>
                         </div>
                     </div>
-                    <img src="./img/avatar.png" alt="">
+                    <div class="about__bg">
+                        <img class="about__img" src="./img/avatar.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,14 +108,40 @@
 
                     <!-- .....  -->
 
+
                 </div>
             </div>
         </div> 
 
+
         <div class="skills">
             <div class="conteiner">
-                <!-- <h1 class="title">Skills</h1> -->
-                <h2>Sorry, but there is nothing here yet :(</h2>
+                <h1 class="title">Skills</h1>
+                <div class="skills__wrapper">
+                    <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aliquid alias a minus praesentium at mollitia maiores dolore quos corrupti, voluptatum possimus cupiditate similique aliquam consectetur beatae explicabo. Minima, voluptatem.</p>
+                    <div class="skills__body">
+                        <div class="skills__item">
+                            <h2 class="skills__name">HTML</h2>
+                            <div class="skills__progress">
+                                <div class="skills__progress-value skills__progress-value--html"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <h2 class="skills__name">CSS</h2>
+                            <div class="skills__progress">
+                                <div class="skills__progress-value skills__progress-value--css"></div>
+                            </div>
+                        </div>
+
+                        <div class="skills__item">
+                            <h2 class="skills__name">JS</h2>
+                            <div class="skills__progress">
+                                <div class="skills__progress-value skills__progress-value--js"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
