@@ -8,9 +8,10 @@
         margin-top: 70px;
         padding-right: 100px;
 
+
         @media (max-width: $breakpoints768) {
             text-align: center;
-            padding-right: 0;
+            padding: 0 20px;
         }
     }
 
@@ -25,6 +26,11 @@
 
         @media (max-width: $breakpoints768) {
             font-size: 18px;
+            letter-spacing: .1rem;
+        }
+
+        @media (max-width: $breakpoints480) {
+            font-size: 14px;
         }
     }
 
@@ -78,6 +84,14 @@
         @media (max-width: $breakpoints1024) {
             font-size: 20px;
         }
+
+        @media (max-width: $breakpoints768) {
+            margin-right: 0;
+        }
+
+        @media (max-width: $breakpoints480) {
+            font-size: 16px;
+        }
     }
 
     &__progress {
@@ -90,6 +104,11 @@
         display: flex;
         height: 30px;
         width: 300px;
+
+        @media (max-width: $breakpoints768) {
+            width: 250px;
+            height: 25px;
+        }
     }
     
     &__progress-value {
@@ -98,6 +117,11 @@
         background: $primary-color;
         height: 20px;
         width: 0;
+
+        @media (max-width: $breakpoints768) {
+            width: 250px;
+            height: 15px;
+        }
 
         &--html {
             animation: html 3s normal forwards;

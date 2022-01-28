@@ -6,6 +6,10 @@
     }
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: $main-font-family;
@@ -38,6 +42,7 @@ a {
 .conteiner {
     max-width: 92%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .title {
@@ -52,7 +57,7 @@ a {
     }
 
     @media (max-width: $breakpoints768) {
-        font-size: 30px;
+        font-size: 26px;
         margin-left: 50%;
         transform: translate(-50%);
     }
@@ -71,24 +76,3 @@ a {
         }
     }
 }
-
-// .burger {
-//     width: 30px;
-//     height: 20px;
-//     position: relative;
-//     left: 0;
-//     // display: none;
-
-//     @media (max-width: $breakpoints768) {
-//         display: block;
-//     }
-    
-//     &::before,
-//     &::after {
-//         content: "";
-//         position: absolute;
-//         width: 100%;
-//         height: 2px;
-//         background-color: $primary-color;
-//     }
-// }
