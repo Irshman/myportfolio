@@ -147,7 +147,7 @@ a {
   }
 }
 .sidebar__item {
-  margin: 40px 0;
+  margin: 50px 0;
 }
 @media (max-width: 769px) {
   .sidebar__item {
@@ -462,7 +462,7 @@ a {
   }
 }
 .skills__name {
-  max-width: 100px;
+  max-width: 150px;
   width: 100%;
   margin-right: 30px;
   font-size: 24px;
@@ -523,8 +523,17 @@ a {
 .skills__progress-value--css {
   animation: css 3s normal forwards;
 }
+.skills__progress-value--sass {
+  animation: sass 3s normal forwards;
+}
 .skills__progress-value--js {
   animation: js 3s normal forwards;
+}
+.skills__progress-value--git {
+  animation: git 3s normal forwards;
+}
+.skills__progress-value--bootstrap {
+  animation: bootstrap 3s normal forwards;
 }
 @keyframes html {
   0% {
@@ -548,6 +557,30 @@ a {
   }
   100% {
     width: 65%;
+  }
+}
+@keyframes git {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes sass {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes bootstrap {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
   }
 }
 

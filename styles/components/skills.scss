@@ -67,7 +67,7 @@
     }
 
     &__name {
-        max-width: 100px;
+        max-width: 150px;
         width: 100%;
         margin-right: 30px;
         font-size: 24px;
@@ -129,9 +129,22 @@
             animation: css 3s normal forwards;
         }
 
+        &--sass {
+            animation: sass 3s normal forwards;
+        }
+
         &--js {
             animation: js 3s normal forwards;
         }
+
+        &--git {
+            animation: git 3s normal forwards;
+        }
+
+        &--bootstrap {
+            animation: bootstrap 3s normal forwards;
+        }
+        
     }
 
     @keyframes html {
@@ -147,5 +160,20 @@
     @keyframes js {
         0% { width: 0; }
         100% { width: 65%; }
+    }
+
+    @keyframes git {
+        0% { width: 0; }
+        100% { width: 45%; }
+    }
+
+    @keyframes sass {
+        0% { width: 0; }
+        100% { width:60%; }
+    }
+
+    @keyframes bootstrap {
+        0% { width: 0; }
+        100% { width:30%; }
     }
 }
